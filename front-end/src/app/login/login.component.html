@@ -1,0 +1,15 @@
+<div class="container">
+  <h1 class="py-4 text-center">Login!</h1>
+  <div class="d-flex flex-column w-50 mx-auto">
+    <div>
+      Username:
+    </div>
+    <input type="text" name="username" [(ngModel)]="username" class="my-2">
+    <div>
+      Password:
+    </div>
+    <input type="password" name="password" [(ngModel)]="password" class="my-2">
+    <button type="button" name="" (click)=handleLogin() class="btn btn-primary">Login</button>
+    <div class="alert alert-warning my-2" *ngIf='invalidLogin'>{{errorMessage}}</div>
+  </div>
+</div>
